@@ -22,7 +22,7 @@ function App() {
             }
         }
         totalPointsElement.innerText = totalCredits + "stp";
-        averageElement.innerText = (totalNormalized / totalValidCredits).toFixed(2);
+        averageElement.innerText = (totalNormalized / totalValidCredits).toFixed(1);
     }
 
     function calculateGrade(event) {
@@ -83,7 +83,7 @@ function App() {
         //console.log(totalCredits);
         const averageGrade = totalNormalized / validCredits;
         totalPoints.textContent = totalCredits + "stp";
-        average.textContent = averageGrade.toFixed(2);
+        average.textContent = averageGrade.toFixed(1);
     }
 
 
@@ -132,7 +132,7 @@ function App() {
                         <th>Emnekode</th>
                         <th></th>
                         <th>Termin</th>
-                        <th>Vekt</th>
+                        <th>Vekt (stp)</th>
                         <th>Karakter</th>
                         <th>Normalisert</th>
                     </tr>
